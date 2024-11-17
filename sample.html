@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload COR File</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload COR</h2>
+        <div class="file-input">
+            <button type="button" onclick="document.getElementById('corUpload').click()">Choose COR File</button>
+            <input type="file" id="corUpload" name="corFile" accept=".pdf, .png, .jpg, .jpeg" style="display: none;" onchange="displayFileName()">
+            <span id="fileName">No file selected</span>
+        </div>
+        <br>
+        <button class="upload-btn" onclick="uploadCor()">Upload</button>
+    </div>
+
+    <!-- Include Firebase Libraries -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-storage.js"></script>
+
+    <script src="sample.js"></script>
+</body>
+</html>

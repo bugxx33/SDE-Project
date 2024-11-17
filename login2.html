@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login2.css">
+</head>
+<body>
+    <div class="Login">
+        <div class="Logo">
+            <br>
+            <br>
+            <img src="image/image-Photoroom.png" class="Logo" alt="Logo">
+        </div> 
+
+        <div class="form-box">
+            <form action="" name="Formfill">
+                <div class="input-box">
+                    <input type="text" name="Username" placeholder="" required>
+                </div>
+                <div>
+                    Username
+                    <br> 
+                </div>
+                <br>
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="Password" placeholder="" required>
+                    <button type="button" id="toggle-password">
+                        <img src="image/ic_fluent_eye_show_24_regular-64 1.png" alt="Show/Hide Password" class="eye-icon">
+                    </button>
+                </div>
+                <div>
+                    Password
+                </div>
+                <br>
+                <div class="btn-login">
+                    <button type="button" class="btn-login">Login</button>
+                    <br>
+                </div>
+                <br>
+                <div class="invalid" style="display: none;">
+                    <div>Incorrect Password or email. <br>
+                        Please try again.
+                    </div>
+                </div>           
+                <div class="btn-forgetpass">
+                    <button type="button" class="btn-forgetpass">Forget Password</button>
+                </div>
+                <br>
+                <br>
+            </form>
+        </div>
+     
+        <div class="buttons-row">
+            <a href="signup.html" class="btn-blue">Create Account</a>
+            <a href="" class="btn-blue">Need Help?</a>
+        </div>
+    </div>
+
+    <script type="module" src="login2.js"></script>
+</body>
+</html>

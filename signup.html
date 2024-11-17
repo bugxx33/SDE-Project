@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+   
+<div class="form-box">
+    <form action="" name="form-box-req">
+        <div class="input-box">
+            <input type="text" name="First Name" placeholder="First Name" id="firstName" required>
+            <br>
+            <input type="text" name="Last Name" placeholder="Last Name" id="lastName" required>
+            <br>
+            <input type="text" name="ID Number" placeholder="ID Number" id="idNumber" required>
+            <br>
+            <input type="text" name="Department" placeholder="Department" id="department" required>
+            <br>
+            <input type="text" name="College" placeholder="College" id="college" required>
+            <br>
+            <input type="text" name="Contact Number" placeholder="Contact Number" id="contactnumber" required>
+            <br>
+            <input type="text" name="Email Address" placeholder="Email Address" id="emailaddress" required>
+       
+       
+       
+        </div>
+        <br>
+    </form>
+    
+    <form action="" name="newRequirements">
+        <div class="AttachCOR">
+            <img src="/image/image 2.png" class="AttachCOR">
+            <br>
+            <button type="button" onclick="document.getElementById('corUpload').click()">Attach COR</button>
+            <input type="file" id="corUpload" name="corFile" style="display: none;" accept=".png, .jpg, .jpeg, .pdf">
+            <br>
+        </div>
+        
+        <div class="AttachID">
+            <img src="/image/image 3.png" class="AttachID">
+            <br>
+            <button type="button" onclick="document.getElementById('idUpload').click()">Attach ID</button>
+            <input type="file" id="idUpload" name="idFile" style="display: none;" accept=".png, .jpg, .jpeg, .pdf">
+            <br>
+        </div>
+        
+        <div class="AttachSelfieID">
+            <img src="/image/image 4.png" class="AttachSelfieID">
+            <br>
+            <button type="button" onclick="document.getElementById('selfieIdUpload').click()">Attach Selfie with ID</button>
+            <input type="file" id="selfieIdUpload" name="selfieIdFile" style="display: none;" accept=".png, .jpg, .jpeg, .pdf">
+            <br>
+        </div>
+
+          
+        <div class="AttachProfile">
+            <img src="/image/1564534_customer_man_user_account_profile_icon.png" class="AttachSelfieID">
+            <br>
+            <button type="button" onclick="document.getElementById('profileUpload').click()">Attach Profile</button>
+            <input type="file" id="profileUpload" name="profileUpload" style="display: none;" accept=".png, .jpg, .jpeg, .pdf">
+            <br>
+        </div>
+    </form>
+
+</div>
+
+<div class="next">
+    <button class="next" id="next" type="button">Next</button>
+    <br>
+</div>
+
+<script type="module" src="signup.js"></script>
+   
+</body>
+</html>

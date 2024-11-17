@@ -1,0 +1,59 @@
+:root{
+    --blue-color: #597CA5; 
+    --white-color: #FFFFFF; 
+    --lightblue-color: #13649E;
+    --darkblue-color: #193C65; 
+    --red-color: #c11919ac;
+    --light-red: #E71D1D;
+}
+
+body {
+    background-color: #193C65;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px; /* Reduce this value to move the button higher */
+}
+
+.rent-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #E71D1D; 
+    border-radius: 20px; 
+    color: #FFF8F8; 
+    font-size: 15px; 
+    cursor: pointer;
+    border: none;
+    font-family: Old Standard TT;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.Logo img {
+    width: 600px; /* Increase the width of the logo */
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.image-container img {
+    margin-top: 70px;
+    margin-left: 13px;
+}

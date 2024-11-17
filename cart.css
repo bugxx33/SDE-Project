@@ -1,0 +1,360 @@
+:root {
+    --red-color: #E71D1D;
+    --blue-color: #235093;
+    --white-color: #FFFFFF;
+    --darkblue-color: #184470;
+    --gray-color: #88A5B5;
+    --lightblue-color: #597CA5;
+    --lightgray-color: #D9D9D9;
+    --black-color: rgba(0, 0, 0, 0.5); /* 50% visibility for black */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Old Standard TT", sans-serif;
+    background-color: var(--darkblue-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+/* Header section */
+header {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+}
+
+/* SkoolHub Logo Button */
+.logo {
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
+}
+
+/* Search and cart/profile section */
+.search-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+#search-bar {
+    width: 200px; /* Increased width to make the search bar longer */
+    padding: 10px;
+    padding-left: 50px; /* Space for search icon */
+    border: 0px solid var(--gray-color);
+    border-radius: 0px;
+    background-image: url('3image/search.png'); /* Search icon */
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
+#search-bar::placeholder {
+    color: var(--gray-color);
+    font-style: italic;
+    opacity: 1;
+}
+
+#search-bar:focus::placeholder {
+    color: transparent;
+}
+
+/* Cart and profile icons */
+.cart-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.cart-icon,
+.profile-icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 2px;
+}
+
+.cart-icon img,
+.profile-icon img {
+    width: 60%;
+    height: 60%;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    margin-top: 10px;
+    font-size: 10px;
+    text-align: right; /* Aligns the text to the left */
+}
+
+.footer-nav a {
+    color: var(--white-color);
+    margin-right: 10px; /* Add space between the links */
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.section-divider {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid var(--white-color);
+}
+.section-divider2 {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid var(--black-color);
+}
+/* Organization buttons */
+.organizations {
+    background-color: var(--lightgray-color);
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.organization-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+    border: none;
+    padding: 50px 55px;
+    margin: 3px 3px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn img {
+    margin-bottom: 5px;
+}
+
+.btn:hover {
+    background-color: var(--gray-color);
+}
+
+/* Item Section */
+.item-section {
+    text-align: left;
+    margin-top: 5px;
+    background-color: var(--lightgray-color); /* Retain light gray for section */
+    padding: 20px;
+    border-radius: 0px;
+    position: relative; /* Allow absolute positioning of the border */
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Align items to the left */
+    margin-bottom: 10px;
+    border: 2px solid var(--lightblue-color); /* Add border with light blue color */
+    background-color: var(--lightblue-color); /* Set the background color to light blue */
+    border-radius: 60px; /* Optional: Add rounded corners to the border */
+    padding: 10px; /* Space between items and border */
+}
+/* Adjust container for SCEA Items and See More button alignment */
+.item-header {
+    display: flex;
+    justify-content: space-between; /* Aligns "SCEA Items" and "See More" button */
+    align-items: center;
+    margin-bottom: 10px; /* Adds space between the header and the item list */
+    color: var(--gray-color);
+    
+}
+
+.see-more-container {
+    text-align: right; /* Ensures the See More button is aligned to the right */
+    margin: 0; /* Removes extra margin so the button is aligned with the header */
+}
+
+/* See More button styling */
+#see-more-btn {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--gray-color);
+    border: none;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+#see-more-btn:hover {
+    text-decoration: none;
+}
+
+.see-more-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+/* Hidden items for SCEA */
+.hidden-scea-item {
+    display: none;
+    background-color: var(--lightblue-color); /* Style for the hidden items */
+    border-bottom: 1px solid #ccc; /* Border below the hidden item */
+    padding: 40px; /* Padding around the item */
+    transition: all 0.5s ease-in-out; /* Smooth transition when shown */
+}
+
+/* Show SCEA "Back" button and hidden items smoothly */
+.scea-item-list {
+    overflow: hidden; /* Ensure smooth expansion */
+    transition: height 0.5s ease-in-out; /* Smooth transition for height */
+}
+
+/* Initially hide the "Back" button */
+.back-container-scea {
+    display: none;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+#back-scea-btn {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--gray-color);
+    border: none;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#back-scea-btn:hover {
+    text-decoration: none;
+}
+
+.back-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+
+/* UCS ______________////__________________________________________________*/
+
+/* UCS Section layout */
+.ucs-section {
+    margin-top: 20px;
+    background-color: var(--lightgray-color);
+    padding: 10px;
+    border-radius: 0px;
+    position: relative;
+}
+
+/* Hide extra items initially */
+/* Style for hidden item (Lab Gown) */
+.hidden-item {
+    display: none;
+    background-color: #597CA5; /* Light blue background for the revealed item */
+    border-bottom: 1px solid #ccc; /* Border below the hidden item */
+    padding: 60px; /* Padding around the item */
+    transition: all 0.5s ease-in-out; /* Smooth transition when shown */
+}
+
+/* Style for the UCS item list */
+.ucs-item-list {
+    overflow: hidden; /* Ensure smooth expansion */
+    transition: height 0.5s ease-in-out; /* Smooth transition for height */
+}
+
+/* Initially hide the "Back" button */
+.back-container {
+    display: none;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+
+
+#back-ucs-btn {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--gray-color);
+    border: none;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+#back-ucs-btn:hover {
+    text-decoration: none;
+}
+
+.back-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+/* ////////////Set Items Section /////////////////*/
+.set-section {
+    margin-top: 30px;
+}
+
+.set-item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hidden-set-item {
+    display: none;
+    padding: 50px;
+}
+
+.back-container-set {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.back-container-set button {
+    background-color:transparent;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.back-container-set img {
+    margin-left: 5px;
+}
+
+.back-container-set button:hover {
+    background-color: var(--gray-color);
+}

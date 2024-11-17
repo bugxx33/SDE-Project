@@ -1,0 +1,155 @@
+:root{
+    --blue-color: #597CA5; 
+    --white-color: #FFFFFF; 
+    --lightblue-color: #13649E;
+    --darkblue-color: #193C65; 
+    --red-color: #c11919ac;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #193C65;
+    color: #FFFFFF;
+}
+
+/*buttons*/
+
+.form-box{
+   
+    text-align: center;
+    margin-bottom: 10%;
+    gap: 20px;
+    margin-block:10%;
+    
+}
+
+input{
+    margin-bottom: 5px;
+    color: #597CA5;
+    border: #193C65;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 20px;
+    border-radius: 0%;
+    border:transparent;
+    width: 215px; 
+    height: 39px; 
+    mix-blend-mode: luminosity; 
+    background: rgba(9.26, 61.27, 64.59, 0.64); 
+    border: 1px #235093 solid;
+}
+
+.buttons-row {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 10px;
+
+}
+
+a.btn-blue {
+    background-color: #13649E; /* Blue background color */
+    color: #FFFFFF; /* White font color */
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none; /* No underline */
+    
+    display: inline-block;
+}
+
+a.btn-blue:hover {
+    background-color: #0b4a7e; /* Darker blue on hover */
+    text-decoration: none; /* No underline on hover */
+}
+
+
+.btn-login{
+    background-color: #c11919ac;
+    display:inline-block;
+    cursor:pointer;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+   
+
+}
+
+
+.btn-forgetpass{
+    background-color: #13649E;
+    display:inline-block;
+    border: transparent;
+    cursor:pointer;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.Logo{
+    margin-bottom: 5px;
+    width:110%;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: inline-start;
+}
+
+
+.invalid{
+    color: #c11919ac;
+}
+
+.password-wrapper {
+    position: relative; /* Ensures the eye icon is positioned relative to the input field */
+}
+
+.password-wrapper input {
+    width: 215px; /* Input width */
+    height: 39px; /* Input height */
+    padding-right: 40px; /* Space on the right for the eye icon */
+    padding-left: 10px; /* Optional padding for better text alignment */
+    background: rgba(9.26, 61.27, 64.59, 0.64); /* Background color */
+    border: 1px solid #235093; /* Input border */
+    color: #597CA5; /* Text color */
+    position: relative; /* Ensure the input has relative positioning */
+}
+
+.password-wrapper button {
+    position: absolute; /* Absolute positioning for the eye icon button */
+    top: 50%; /* Center vertically */
+    right: 130px; /* Position on the right inside the input */
+    transform: translateY(-30%); /* Vertical centering */
+    background: none; /* Transparent background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    padding: 0; /* No padding */
+    outline: none; /* Remove button outline */
+}
+
+.password-wrapper .eye-icon {
+    width: 24px; 
+    height: 26px;
+}

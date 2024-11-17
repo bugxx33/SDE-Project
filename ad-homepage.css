@@ -1,0 +1,70 @@
+:root{
+    --blue-color: #597CA5; 
+    --white-color: #FFFFFF; 
+    --lightblue-color: #13649E;
+    --darkblue-color: #193C65; 
+    --red-color: #c11919ac;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #193C65;
+    color: #FFFFFF;
+    text-align: center; /* Center text and elements in body */
+}
+
+/* Logo on the left, centered horizontally */
+.Logo {
+    width: 1000px; /* Adjust size as needed */
+    align-items: center;
+    margin: 0 auto; /* Center the logo */
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -150px;
+}
+
+/* Rent Now Button Styling */
+.rent-btn {margin-bottom: 50px;
+    padding: 15px 50px;
+    background: #E71D1D; 
+    border-radius: 20px; 
+    color: #FFF8F8; 
+    font-size: 15px; 
+    cursor: pointer;
+    border: none;
+    font-family: Old Standard TT;
+    
+}
+
+/* Image Container Styling */
+.image-container {
+    display: flex;
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Add space between images */
+    margin-top: 20px; /* Space between the button and images */
+}
+
+.image-container img {
+    width: 100%; 
+    height: 100%;
+    width: 71px; /* Adjust image size */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 150px; /* Adjust image size for smaller screens */
+    }
+}

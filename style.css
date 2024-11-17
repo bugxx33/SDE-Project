@@ -1,0 +1,93 @@
+body {
+    font-family: 'Old Standard TT', serif;
+    background-color: #184470;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    left: 26px;
+    top: 86px;
+    text-align: center;
+    color: #FFFDFD;
+    font-size: 20px;
+    font-weight: 700;
+    width: calc(100% - 52px);
+}
+
+.organization-btn {
+    position: absolute;
+    left: 90px;
+    width: 176px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: white;
+}
+
+.organization-btn:first-of-type {
+    top: 183px;
+}
+
+.organization-btn:last-of-type {
+    top: 428px;
+}
+
+.logo-container {
+    width: 176px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.organization-btn:first-of-type h2 {
+    width: 84px;
+    height: 37px;
+    position: absolute;
+    left: 46px;
+    top: 174px;
+}
+
+.organization-btn:last-of-type h2 {
+    width: 62px;
+    height: 20px;
+    position: absolute;
+    left: 57px;
+    top: 174px;
+}
+
+/* Add hover effect */
+.organization-btn:hover {
+    opacity: 0.8;
+}
+
+/* Add focus styles for accessibility */
+.organization-btn:focus {
+    outline: 2px solid white;
+    outline-offset: 4px;
+}

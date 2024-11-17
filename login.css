@@ -1,0 +1,124 @@
+:root{
+    --blue-color: #597CA5; 
+    --white-color: #FFFFFF; 
+    --lightblue-color: #13649E;
+    --darkblue-color: #193C65; 
+    --red-color: #c11919ac;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: #193C65;
+    color: #FFFFFF;
+}
+
+/*buttons*/
+
+.form-box{
+    text-align: center;
+    margin-bottom: 10%;
+    gap: 20px;
+    margin-block:10%;
+    
+}
+
+input{
+    margin-bottom: 5px;
+    color: #597CA5;
+    border: #193C65;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 20px;
+    border-radius: 0%;
+}
+
+.buttons-row {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+a.btn-blue {
+    background-color: #13649E; /* Blue background color */
+    color: #FFFFFF; /* White font color */
+    text-align: center;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none; /* No underline */
+    
+    display: inline-block;
+}
+
+a.btn-blue:hover {
+    background-color: #0b4a7e; /* Darker blue on hover */
+    text-decoration: none; /* No underline on hover */
+}
+
+
+.btn-login {
+    background-color: #c11919; /* Solid red background */
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    border-radius: 20px; /* Rounded corners */
+    font-size: 15px;
+    border: none;
+    padding: 5px 8px; /* Slightly reduced vertical padding */
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: none;
+    transition: background-color 0.3s;
+    line-height: 1; /* Set line-height to 1 to remove extra space */
+    vertical-align: middle; /* Ensure vertical alignment is centered */
+
+}
+
+.btn-login:hover {
+    background-color: #a31515; /* Slightly darker red on hover */
+}
+
+
+
+.btn-forgetpass{
+    background-color: #13649E;
+    display:inline-block;
+    border: transparent;
+    cursor:pointer;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.Logo{
+    width:110%;
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: inline-start;
+}
+
+.invalid{
+    color: #c11919ac;
+    margin: 10px 10px;
+}
+

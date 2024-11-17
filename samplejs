@@ -1,0 +1,2 @@
+const selectImage = document.querySelector('corUpload');
+const selectImage = document.querySelector('#file');

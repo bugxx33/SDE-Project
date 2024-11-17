@@ -1,0 +1,61 @@
+:root{
+    --blue-color: #597CA5; 
+    --white-color: #FFFFFF; 
+    --lightblue-color: #13649E;
+    --darkblue-color: #193C65; 
+    --red-color: #c11919ac;
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+   
+    background-color: #193C65;
+    color: #FFFFFF;
+
+}
+h3{
+   
+    text-align: left;
+    padding: 16px 32px;
+    border-radius: 10px;
+    align-items: center;
+    font-weight:normal;
+    text-align: justify;
+    font-size: 14px;
+    font-family: Lateef;
+}
+
+.image-container {
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.image {
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.Ellipse{
+    display:block;
+    margin:auto;
+    size: 176px 160px;
+}
+
+
+button{
+color: #FFFFFF;
+
+}
+.About-section{
+    color:#FFFFFF;
+    font-weight: 200;
+    font-variant:initial;
+}
+
